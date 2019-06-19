@@ -1,0 +1,145 @@
+/*header class */
+p {
+    font-weight: bold;
+}
+div {
+height: auto; /*if more info comes on the page, it will stretch down*/
+margin: 0 auto; /*this will cause the div to be in the center*/
+}
+ /*header*/
+.header {
+    border-radius: 16px 16px 0px 0px;
+    background-color: powderblue;
+    padding-bottom: 120px;
+    border: 3px blue;
+}
+
+.header .image {
+    position: absolute;
+    top: 75px;
+    right: 150px;
+    width: 219px;
+    height: 294px;
+}
+
+.header .text {
+    margin: 0px 20px;
+    padding-top: 10px;
+}
+
+/*center*/
+
+.center {
+    position: relative;
+    background-color: #FDE7C2;
+    width: 50%;
+}
+
+.center .resume {
+    padding-top: 1px;
+    margin: auto;
+    width: 70%;
+}
+
+.center .youtube {
+    margin: auto;
+    width: 70%;
+}
+.center .courses {
+    margin: auto;
+    width: 70%
+    
+}
+
+.center .location {
+    margin: auto;
+    width: 70%;
+}
+
+/*table*/
+
+table {
+    width: 450px;
+}
+table, td,th{border:1px solid;
+}
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 90%;
+}
+
+tbody tr:nth-child(even) {
+    background-color: orange;
+}
+
+tbody tr:hover td,
+tbody tr:hover th {
+    background-color: lightgreen;
+}
+
+td {
+    width: 50%;
+}
+
+/*menu class */
+
+.menu a:link {
+    text-decoration: none;
+}
+
+.menu a:visited {
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+.menu a:active{
+    color:green;
+}
+
+.menu {
+    float: left;
+    position: fixed;
+    left: 120px;
+    top: 385px;
+    width: 25%;
+}
+
+/*links class */
+
+.links a:link {
+    color:black;
+    text-decoration: none;
+
+}
+
+.links a:visited {
+    color:red;
+    text-decoration: line-through;
+}
+
+.links a:hover {
+    text-decoration: underline;
+
+}
+
+.links a:active {
+    text-decoration: underline;
+}
+
+.links {
+    float: right;
+    position: absolute;
+    right: 30px;
+    width:25%;
+
+}
+
+.border {
+    margin: 40px 100px 0px 100px;
+    background-color: #48D1CC;
+    border-radius: 16px;
+    border: 2px solid blue;
+}

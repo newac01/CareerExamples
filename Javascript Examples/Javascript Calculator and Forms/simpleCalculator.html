@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<style>
+    div {
+        height: auto;
+        /*if more info comes on the page, it will stretch down*/
+        margin: 10px auto;
+        /*this will cause the div to be in the center*/
+    }
+
+    p {
+        margin: auto;
+    }
+
+    body,
+    html {
+        margin: 50px;
+    }
+    
+</style>
+
+<head>
+
+    <title>A Simple Adder</title>
+</head>
+<script src="calcscript.js">
+</script>
+
+<body>
+    <div>
+        <form name="calculator">
+            <p>
+                Number 1:
+            </p>
+            <input type="text" id="num1">
+            <p>
+                Number 2:
+            </p>
+            <input type="text" id="num2">
+            <div>
+                <input id="addNum" type="button" value="Add" onclick="add()">
+                <input id="subNum" type="button" value="Sub" onclick="sub()">
+                <input id="mulNum" type="button" value="Mul" onclick="multiply()">
+                <input id="divNum" type="button" value="Div" onclick="divide()">
+            </div>
+            Result: <input type="text" id="result"><br/><br/>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

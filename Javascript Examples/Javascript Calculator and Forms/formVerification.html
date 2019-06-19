@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+    <style>
+        #review {
+            margin: 30px 0px 0px 0px;
+        }
+
+        #user {
+            margin: 0px 0px 5px 0px;
+        }
+
+        #comment {
+            margin: 3px 0px 3px 0px;
+        }
+
+        h2 {
+            border-bottom: .5px solid;
+            margin: 0px 0px 40px 0px;
+        }
+
+        label {
+            height: 0px;
+        }
+
+        .form-group {
+            width: 350px;
+            margin: 20px 0px 30px 0px;
+        }
+
+        .form-radio {
+            margin: 0px;
+        }
+
+        .form-select {
+            margin: 20px 0px;
+        }
+
+        .form-comment {
+            margin: 20px 0px;
+
+        }
+    </style>
+    <script src="formScript.js"></script>
+    <title>Forms</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Your Details:</h2>
+        <form action="" id="signUp" method="get" onsubmit="return validate();">
+            <fieldset>
+                <div class="form-group">
+                    <label for="user">Name:</label>
+                    <input type="text" class="form-control" id="user">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <h2 id="review">Your Review:</h2>
+                <div class="form-select">
+                    <label for="select">How did you hear about us?</label>
+                    <select class="form-control" id="select">
+                    <option>Google</option>
+                    <option>Friend</option>
+                    <option>Advert</option>
+                    <option>Other</option>
+                </select>
+                </div>
+                <div class="form-radio">
+                    <label for="radioY">Would you visit again?</label>
+                    <div class="form-radio">
+                        <label class="radio-inline">
+                    <input type="radio" name="optradio" id="radioY">Yes
+                </label>
+                        <label class="radio-inline">
+                    <input type="radio" name="optradio" id="radioN">No
+                </label>
+                        <label class="radio-inline">
+                    <input type="radio" name="optradio" id="radioM">Maybe
+                </label>
+                    </div>
+                </div>
+                <div class="form-comment">
+                    <label for="comment">Comments:</label>
+                    <textarea class="form-control" rows="5" id="comment" name="commentBox"></textarea>
+                </div>
+                <div class="checkbox">
+                    <label><input id="agree" type="checkbox" name="signMe" onclick="enableSubmit(this)" checked="checked"> Sign me up for email updates</label>
+                </div>
+                <button type="submit" class="btn btn-default" disabled id="submit">Submit Review</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
